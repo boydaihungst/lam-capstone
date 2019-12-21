@@ -24,7 +24,7 @@ module.exports = {
       host: ['149.28.148.148'],
       // SSH options with no command-line flag, see 'man ssh'
       // can be either a single string or an array of strings
-      ssh_options: 'StrictHostKeyChecking=no',
+      //ssh_options: 'StrictHostKeyChecking=no',
       // GIT remote/branch
       ref: 'origin/master',
       // GIT remote

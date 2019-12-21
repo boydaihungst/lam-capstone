@@ -6,7 +6,7 @@ module.exports = {
       script: './dist/bundle.js',
       watch: false,
       env_production: {
-        NODE_ENV: 'production',
+        NODE_ENV: 'development',
       },
       error_file: '.log/err.log',
       out_file: '.log/out.log',
@@ -14,8 +14,8 @@ module.exports = {
     },
   ],
   deploy: {
-    // "production" is the environment name
-    production: {
+    // "development" is the environment name
+    development: {
       // SSH key path, default to $HOME/.ssh
       // key: '~/.ssh/id_rsa.pub',
       // SSH user
@@ -42,9 +42,9 @@ module.exports = {
       ignore_watch: ['dist', 'node_modules'],
       // post-deploy action
       'post-deploy':
-        'yarn install && yarn build && pm2 startOrRestart ecosystem.config.js --env production && pm2 save',
+        'yarn install && yarn build && pm2 startOrRestart ecosystem.config.js --env development && pm2 save',
       env: {
-        NODE_ENV: 'production',
+        NODE_ENV: 'development',
       },
     },
   },

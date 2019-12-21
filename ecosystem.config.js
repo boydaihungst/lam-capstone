@@ -17,7 +17,7 @@ module.exports = {
     // "production" is the environment name
     production: {
       // SSH key path, default to $HOME/.ssh
-      key: '~/.ssh/id_rsa',
+      // key: '~/.ssh/id_rsa.pub',
       // SSH user
       user: 'lam',
       // SSH host

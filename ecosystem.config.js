@@ -42,7 +42,7 @@ module.exports = {
       ignore_watch: ['dist', 'node_modules'],
       // post-deploy action
       'post-deploy':
-        'yarn install && pm2 startOrRestart ecosystem.config.js --env production && pm2 save',
+        'yarn install && yarn build && pm2 startOrRestart ecosystem.config.js --env production && pm2 save',
       env: {
         NODE_ENV: 'production',
       },

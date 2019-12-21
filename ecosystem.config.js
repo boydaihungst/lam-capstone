@@ -17,7 +17,7 @@ module.exports = {
     // "production" is the environment name
     production: {
       // SSH key path, default to $HOME/.ssh
-      key: '$HOME/.ssh',
+      key: '~/.ssh',
       // SSH user
       user: 'lam',
       // SSH host
@@ -30,7 +30,7 @@ module.exports = {
       // GIT remote
       repo: 'git@github.com:boydaihungst/lam-capstone.git',
       // path in the server
-      path: '/home/lam/capstone-project-server-side',
+      path: '/home/lam/capstone-project',
       // Pre-setup command or path to a script on your local machine
       'pre-setup': '',
       // Post-setup commands or path to a script on the host machine
